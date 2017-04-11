@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Plexo Braquial</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--MEU CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--FONTES-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
+    <!-- Jquery -->
+    <link type="text/css" rel="stylesheet" href="assets/js/jquery/jquery-ui.css">
+    <script src="assets/js/jquery/external/jquery/jquery.js"></script>
+    <script src="assets/js/jquery/jquery-ui.js"></script>
+    <script src="assets/bootstrap-validator/validator.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <!--Barra superior-->
+    <header>
+        <nav class="row">
+            <div class="container aNav">
+                <!--Espaço do logo lado esquerdo-->
+                <div class="col-xs-9 col-sm-9 col-md-9">
+                    <a href="/">
+                        <img class="aLogo" alt="Logo da iniciativa" src="assets/img/logo.png">
+                    </a>
+                </div>
+                <!--Espaço do icone do lado direito-->
+                <div class="col-xs-3 col-sm-3 col-md-3 aMenu">
+                    <button href="#" class="menu-hamburger btn"><i class="glyphicon glyphicon-menu-hamburger"></i></button>
+                    <div class="aMenuAbraco">
+                        <ul>
+                            <li class="active">
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Quem somos</a>
+                            </li>
+                            <li>
+                                <a href="#">Lesão do Plexo Braquial</a>
+                            </li>
+                            <li>
+                                <a href="#">Pesquisa</a>
+                            </li>
+                            <li>
+                                <a href="#">Recursos Educacionais</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- botao menu -->
+    <script src="assets/js/menu.js"></script>
+
+
+    <!--Introdução-->
+    <div class="container aIntroduction ">
+        <div class="row">
+            <div class="col-md-12">
+                <p>Dor, dormência ou perda de movimento no braço após um acidente ou trauma podem ser indicativos de uma lesão
+                    nos nervos da região do pescoço e do ombro, chamada lesão traumática do plexo braquial.</p>
+                <p>A nossa missão é acolher e orientar pacientes que sofreram uma lesão traumática do plexo braquial e seus
+                    familiares, oferecer treinamento e capacitação para profissionais interessados e divulgar pesquisa em
+                    desenvolvimento sobre a lesão e suas consequências funcionais.</p>
+            </div>
+        </div>
+        <!-- Acoes da iniciativa -->
+        <div class="row aSection text-center">
+            <div>
+                <div class="col-md-4">
+                    <a href="#">
+                        <div id="aBotaoLesao">
+                            <h2>Lesão do Plexo Braquial</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#">
+                        <div id="aBotaoPesquisa">
+                            <h2>Pesquisa</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#">
+                        <div id="aBotaoRecEduc">
+                            <h2>Recursos Educacionais</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Ilustração do braço-->
+    <div class="row">
+        <div class="container aIlustracaoMob">
+            <div class="col-md-12 aIlustracao">
+                <img src="assets/img/ilustraBraco.jpg" alt="Ilustração de uma braço e terminações nervosas">
+            </div>
+        </div>
+    </div>
+    <!--Novidades-->
+    <div class="row">
+        <div class="container aSecaoNovidades">
+            <h2>Novidades</h2>
+            <!--Slider com as últimas novidades publicadas-->
+            <div class="carousel slide multi-item-carousel" id="Carousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="col-md-4">
+                            <a href="#">
+                                <div class="aNovidade aNovidadeTexto">
+                                    <h3>Título da novidade 1</h3>
+                                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis obcaecati necessitatibus,
+                                        a voluptatem voluptates dolorem aspernatur facilis dolorum optio architecto enim,
+                                        doloremque ...</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#"></a>
+                            <div class="aNovidade aNovidadeTexto">
+                                <h3>Título da novidade 2</h3>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis obcaecati necessitatibus,
+                                    a voluptatem voluptates dolorem aspernatur facilis dolorum optio architecto enim, doloremque
+                                    ...</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#"></a>
+                            <div class="aNovidade aNovidadeTexto">
+                                <h3>Título da novidade 3</h3>
+                                <p> Lorem ipsum dolor sit amet, consectetur facilis dolorum optio facilis dolorum optioadipisicing elit. Quis obcaecati necessitatibus,
+                                    a voluptatem voluptates dolorem aspernatur facilis dolorum optio architecto enim, doloremque
+                                    ...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#Carousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                <a class="right carousel-control" href="#Carousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+            </div>
+        </div>
+    </div>
+    <!--Rodapé-->
+    <div class="footer">
+        <div class="row">
+            <div class="container aRodape text-center">
+                <div class="col-md-4">
+                    <a href="#"><img src="assets/img/Fapesp.png" alt="Definir"></a>
+                    <p>Iniciativa</p>
+                </div>
+                <div class="col-md-4">
+                    <a href="#"><img src="assets/img/Fapesp.png" alt="Definir"></a>
+                    <p>Apoio</p>
+                </div>
+                <div class="col-md-4">
+                    <a href="#"><img src="assets/img/Fapesp.png" alt="Definir"> </a>
+                    <p>Parceiro</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container aRodape">
+                <hr>
+                <div class="col-md-3">
+                    <h3> Abraço</h3>
+                    <ul>
+                        <li><a href="#">Quem somos</a></li>
+                        <li><a href="#">Lesão do Plexo Braquial</a></li>
+                        <li><a href="#">Pesquisa</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3> Siga</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Youtube</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3> Entre em contato</h3>
+                    <ul>
+                        <li><a href="#">Formulário: Faça Parte</a></li>
+                        <li><a href="#">e-mail@email.com.br</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container aRodape aLicensa">
+                <div class="col-md-12">
+                    <p>Licenciado sob os termos [Link da licença]</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets//bootstrap/js/bootstrap.min.js"></script>
+    <!--Slider da area de Novidades-->
+    <script src="assets/js/slider.js"></script>
+</body>
+</html>

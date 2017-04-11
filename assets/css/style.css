@@ -1,0 +1,166 @@
+/*Definicoes gerais*/
+
+* {margin: 0px; padding: 0px;}
+
+.row {margin-right: 0; margin-left: 0;}
+
+h1, h2, h3, h4, p {font-family: 'Open Sans', sans-serif;color: #525758;}
+
+h1 {font-size: 30px; text-transform: uppercase;}
+h2 {font-size: 19px; text-transform: uppercase; text-align: center;}
+h3 {font-size: 15px;text-transform: uppercase;}
+p {font-size: 15px;}
+
+a {color: #137B7B;}
+a:link {text-decoration: none;}
+a:hover h2, a:hover h3 {font-weight: 600;}
+a:focus, a:hover {color: #000000; text-decoration: none;}
+
+hr {margin-top: 0; margin-bottom:0;}
+
+/*Cabeçalho*/
+
+.aNav{ padding: 0;}
+.aLogo {width: 35%; margin: 0.5em 0;}
+
+.btn {background-color: #115960;}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {outline: 0px auto -webkit-focus-ring-color;}
+
+header .aMenu {color: #fff;margin: 1em 0; padding: 0;}
+header .aMenu i{ color: #fff; font-size: 2em }
+header .aMenu span.has-tip { border-bottom: 0; cursor: pointer }
+header .aMenu button {float: right;}
+
+header .aMenuAbraco {position: absolute;z-index: 999;display: none;margin-top: -2.5em;top:86px;left: 80px;}
+header .aMenuAbraco li:first-child a span { width: 0; height: 0; border: inset 0.5rem; border-color: transparent transparent #ffffff; border-bottom-style: solid; border-top-width: 0; bottom: 100%; position: absolute; left: 4%; }
+header .aMenuAbraco ul { list-style: none; margin: 0; background-color: #ffffff; border-radius: 2px; }
+header .aMenuAbraco ul li { border-bottom: 1px solid #ccc; }
+header .aMenuAbraco ul li:last-child { border-bottom: none; }
+header .aMenuAbraco ul li a { display: block; padding: .4em 4em .4em 1em; }
+header .aMenuAbraco ul li a:hover { background-color: #ccc; }
+header .aMenuAbraco ul li:first-child a:hover span {border-color: transparent transparent #ccc;}
+header .aMenuAbraco ul li:first-child a:hover {border-radius: 2px 2px 0 0; }
+header .aMenuAbraco ul li:last-child a:hover {border-radius: 0 0 2px 2px ;  }
+
+/*Texto de introducao*/
+
+.aIntroduction {background-image: url(../img/bg_verde.png); background-repeat: repeat-x; background-size: 255px; padding: 40px 40px 10px 40px; margin-bottom: 10px;}
+.aIntroduction p {color: #FFFFFF; font-size: 19px; font-weight: 300; margin-bottom: 20px;}
+
+/*Links Acoes*/
+
+#aBotaoLesao {background-color: #F8F8F8; border-bottom: 10px solid #137B7B; border-radius: 2px; box-shadow: 1px -1px 2px #4c4e4c; -webkit-box-shadow: 1px -1px 2px 4c4e4c; -moz-box-shadow: 1px -1px 2px 4c4e4c; padding: 10px;}
+#aBotaoPesquisa {background-color: #F8F8F8; border-bottom: 10px solid #3758C1; border-radius: 2px; box-shadow: 1px -1px 2px #4c4e4c; -webkit-box-shadow: 1px -1px 2px #4c4e4c; -moz-box-shadow: 1px -1px 2px #4c4e4c; padding: 10px;}
+#aBotaoRecEduc {background-color: #F8F8F8; border-bottom: 10px solid #BE6837; border-radius: 2px; box-shadow: 1px -1px 2px #4c4e4c; -webkit-box-shadow: 1px -1px 2px #4c4e4c; -moz-box-shadow: 1px -1px 2px #4c4e4c; padding: 10px;}
+
+/*Ilustracao do braco*/
+
+.aIlustracao {padding: 0 40px;}
+.aIlustracao img {width: 100%;}
+
+/*Area de novidades*/
+
+.aSecaoNovidades {margin-top: 20px; background-color: #e5e5e5; padding: 10px;}
+
+.aNovidades {background-color: #ececec; padding-top: 10px; padding-bottom: 20px; margin-top: 20px; margin-bottom: 20px;}
+.aNovidades h2 {padding: 0; text-align: center;}
+
+.aNovidade{ background-color: #FFFFFF; border-top: 1px solid #75b2b7; border-bottom: 10px solid #125F65; border-radius: 2px; padding: 10px; margin-top: 5px;}
+
+.aNovidadeTexto {margin-top: 10px;}
+.aNovidadeTexto p{text-align: left; padding: 7px; font-weight: 300;}
+
+/*Slider da area de novidades*/
+
+.multi-item-carousel{
+  .carousel-inner{
+    > .item{
+      transition: 500ms ease-in-out left;
+    }
+    .active{
+      &.left{
+        left:-33%;
+      }
+      &.right{
+        left:33%;
+      }
+    }
+    .next{
+      left: 33%;
+    }
+    .prev{
+      left: -33%;
+    }
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      > .item{
+        // use your favourite prefixer here
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }
+  }
+  .carouse-control{
+    &.left, &.right{
+      background-image: none;
+    }
+  }
+}
+.carousel-control {
+  opacity: 0.2;
+}
+.carousel-control:focus, .carousel-control:hover {
+  opacity: 0.5;
+}
+.carousel-control.right {
+    background-image: linear-gradient(to right,rgba(18,95,101,.0001) 0,rgba(18,95,101,.1) 100%);
+}
+.carousel-control.left {
+    background-image: linear-gradient(to right,rgba(18,95,101,.1) 0,rgba(18,95,101,.0001) 100%);
+}
+
+/*Rodape*/
+
+.footer{ margin-top: 20px;}
+
+.aRodape { background-color: #115960; padding-top: 10px;}
+.aRodape h3, .aRodape ul, .aRodape a {color: #FFFFFF;}
+.aRodape p {color: #FFFFFF; font-weight: 300;}
+.aRodape img { vertical-align: bottom; padding-top: 10px;}
+.aRodape li { list-style-type:none; font-weight: 300;}
+
+.aLicensa p {font-size: 12px; text-align: right;}
+
+
+/*Ajustes dispositivos*/
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+.container {width: 1300px;}
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .aLogo {width: 75%; margin: 0.5em 0;}
+  .aIntroduction {background-image: url(../img/bg_verde.png); background-repeat: repeat-x; background-size: 500%; padding: 40px 20px 10px 20px; margin-bottom: 0px;}
+
+  /*Links Acoes*/
+  #aBotaoPesquisa, #aBotaoLesao, #aBotaoRecEduc {margin-top: 5px; margin-bottom: 10px;}
+
+  .aIlustracao {padding: 0; margin-top: 20px;}
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+.aLogo {width: 80%; margin: 0.5em 0;}
+
+.aMenuAbraco {position: absolute; z-index: 999;display: none; margin-top: -2.5em; top:86px;}
+
+.aIntroduction {background-image: url(../img/bg_verde.png); background-repeat: repeat-x; background-size: 500%; padding: 40px 10px 10px 10px; margin-bottom: 0px;}
+
+.aIlustracao {padding: 0; margin-top: 20px;}
+.aIlustracao img {width: 100%; padding: 0;} 
+.aIlustracaoMob {padding-right: 0px; padding-left: 0px;}  
+}
